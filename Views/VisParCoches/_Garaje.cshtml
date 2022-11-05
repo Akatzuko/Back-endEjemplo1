@@ -1,0 +1,21 @@
+﻿@using Back_endEjemplo1.Models;
+
+@model Garaje
+
+table.<table table table-dark>
+          <tr>
+              <th>ID</th>
+              <th>Marca</th>
+              <th>Modelo</th>
+              <th>Propietario</th>
+          </tr>
+        @foreach (var item in Model)
+            {
+                <tr>
+                    <th>@item.IdCoche</th>
+                    <th>@item.Marca</th>
+                    <th>@item.Modelo</th>
+                    <th>@item.Propietario</th>
+                </tr>
+            }
+</table>
